@@ -465,11 +465,6 @@ nav li a{
 }
 
 
-/** remove styles **/
-.body-bg{ background: none;}
-header,.steps-head, .loan-steps-box h3, .loan-steps-box .row .col-md-12, .social-links{
-  display: none;
-}
 @media (max-width: 1090px){
   .wrapper{
     margin: 0px 15px;
