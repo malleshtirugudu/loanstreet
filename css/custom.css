@@ -221,7 +221,7 @@ nav li a:hover, nav li a.active{
   font-weight: bold;
 }
 .orange-color{
-  color: #fab913;
+  color: #f4b821;
 }
 .steps-tabs{
   padding:0px;
@@ -330,6 +330,18 @@ nav li a:hover, nav li a.active{
 }
 .input-group-addon img{
   max-width: 30px;
+}
+.recommened-loan{
+  background: #2cb7bc;
+  border-left:7px solid #ffb907;
+  font-size: 22px;
+  font-weight: bold;
+  color:#fff;
+  margin-top: 25px;
+  padding: 15px 10px;
+}
+.black-color{
+  color: #000;
 }
 /**
 ** table styles
