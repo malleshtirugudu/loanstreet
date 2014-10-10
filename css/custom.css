@@ -243,9 +243,17 @@ nav li a:hover, nav li a.active{
   -webkit-border-radius:3px;
   -o-border-radius:3px;
 }
+.steps-tabs li a{
+  color: #fff;
+  text-decoration: none;
+}
 .steps-tabs li.active{
   background:rgba(250, 185, 19, 0.9);
   border:2px solid #ffffff;
+}
+.steps-tabs li.active a{
+  color: #fff;
+  text-decoration: none;
 }
 .steps-tabs li.last{
   background: none;
@@ -267,6 +275,32 @@ nav li a:hover, nav li a.active{
   border-right:12px solid #fab913;
   width: 100%;
   padding:5px 15px 5px 55px;
+}
+.form-steps .form-group{
+  clear: both;
+}
+.form-steps .form-control{
+  padding-left: 10px;
+}
+.two-fileds{
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 100%;
+}
+.two-fileds .input-group{
+  float: left;
+  width: 50%;
+}
+.two-fileds .col-left .form-control{
+  border-right: 0px;
+}
+.two-fileds .col-right .select-control{
+  border-left: 0px;
+  background-color: #383838;
+}
+.two-fileds .col-right .select-control .form-control{
+  color: #fefefe;
+  width: 110%;
 }
 .select-control{
   font-size: 16px;
@@ -297,7 +331,33 @@ nav li a:hover, nav li a.active{
 .input-group-addon img{
   max-width: 30px;
 }
-
+/**
+** table styles
+**/
+.table{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.table tr td{ padding: 10px;}
+.table thead{
+  margin-bottom: 5px;
+}
+.table thead tr{
+  background: #909090;
+}
+.table tbody tr.even{
+  background: #e2e2e2;
+}
+.table tbody tr.odd{
+  background: #eeeeee;
+}
+.table tbody tr:hover{
+  background: #fcf8e3;
+}
+.table thead tr td{
+  font-size: 16px;
+  font-weight: bold;  
+}
 /**
 * social network styles
 **/
@@ -349,9 +409,19 @@ nav li a:hover, nav li a.active{
   color: #fff;
   border:none;
   padding: 15px;
-  width: 172px;
+  width: 135px;
   text-align: center;
   font-size: 24px;
+}
+.btn-primary{
+  background: #000000;
+  color: #fff;
+  border:none;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 14px;
+  float: left;
+  margin-right: 5px;
 }
 
 /** 
@@ -488,7 +558,6 @@ footer ul li a{
   .col-sm-12 {
     width: 100%;
   }
-
 }
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
@@ -532,7 +601,12 @@ footer ul li a{
   }
 }
 
-
+/** remove styles 
+header, footer, .social-links, .steps-head, .loan-steps-box .row .col-md-12, .loan-steps-box h3{
+  display: none;
+}
+.body-bg{ background: none;}
+**/
 @media (max-width: 1090px){
   .wrapper{
     margin: 0px 15px;
