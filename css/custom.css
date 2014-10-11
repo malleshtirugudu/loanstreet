@@ -26,11 +26,11 @@ header{
 nav{
 	float: right;
   margin-top: 5px;
-  margin-right: -35px;
 }
 nav ul{
 	margin: 0px;
 	padding: 0px;
+  float: left;
 }
 nav li{
 	float: left;
@@ -342,6 +342,67 @@ nav li a:hover, nav li a.active{
 }
 .black-color{
   color: #000;
+}
+.recommened-loan select{
+  font-size: 14px;
+  font-weight: normal;
+  color: #000;
+  background: #fab913;
+  border:none;
+  padding: 5px 10px;
+  margin-left: 20px;
+}
+.price-bar{
+  margin-top: 20px;
+}
+.price-bar img{
+  float: left;
+}
+.price-bar-form{
+  border:none;
+  background: rgba(0,0,0,0.6);
+  float: left;
+  font-size: 16px;
+  padding: 12px 15px;
+  color: #fff;
+}
+.loan-detail-table{
+  width: 100%;
+}
+.loan-detail-table thead{
+  background: rgba(157,212,224,0.9);
+  border-width: 4px 4px 0px 4px;
+  border-color: #fff;
+  border-style: solid;
+}
+.loan-detail-table tbody {
+  border-width: 4px 4px 4px 4px;
+  border-color: #fff;
+  border-style: solid;
+}
+.loan-detail-table thead td{
+  font-size: 16px;
+  color: #131212;   
+}
+.loan-detail-table tr td{
+  padding: 15px 20px;
+  border-width: 0px 1px 0px 0px;
+  border-color: #fff;
+  border-style: solid;
+}
+.loan-detail-table tbody{
+  background: #e3eaee;  
+}
+.bottom-row td{
+  background: rgba(169,213,237,0.2)!important;
+  border-width: 0px 0px 0px 0px!important;
+  font-size: 12px;
+}
+.mar-top-10{
+  margin-top: 10px;
+}
+.mar-top-20{
+  margin-top: 20px
 }
 /**
 ** table styles

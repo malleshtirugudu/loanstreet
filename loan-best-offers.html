@@ -10,6 +10,8 @@
     <link href="css/normalize.css" rel="stylesheet">
     <!-- Custom styles -->
     <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -40,6 +42,13 @@
     <header>
       <div class="wrapper">
         <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+           <div class="sb-search" id="sb-search">
+            <form>
+              <input type="search" id="search" name="search" placeholder="Search" class="sb-search-input">
+              <input type="submit" value="" class="sb-search-submit">
+              <span class="sb-icon-search"><img src="images/search-icon.png" alt="" /></span>
+            </form>
+          </div>       
         <nav>
           <ul>
             <li><a class="active" href="loan-step-01.html">Loans</a></li>
@@ -49,7 +58,6 @@
             <li><a href="#">Partners</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Careers</a></li>
-            <li class="searchSec"><button><img src="images/search-icon.png" alt="" /></button></li>
           </ul>
         </nav>
       </div>
@@ -86,38 +94,58 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-12"><h2>Under Construction</h2></div>
+            <div class="col-md-12 price-bar">
+              <img src="images/price-bar.png" alt="" /><input type="text" class="price-bar-form"  placeholder="25,00,000"> 
+            </div>
           </div>
           <div class="row">
-            <div class="col-md-9">
-              <table class="table">
+            <div class="col-md-12">
+              <table class="loan-detail-table mar-top-20">
                 <thead>
                   <tr>
-                    <td>Project Name</td>
-                    <td>Builder Name</td>
-                    <td>Cost</td>
+                    <td>Bank</td>
+                    <td>Processing Fees</td>
+                    <td>Best rate</td>
+                    <td>Rate type</td>
+                    <td>EMI Amount</td>
                     <td>&nbsp;</td>
                   </tr>
                 </thead>
                 <tbody>
                   <tr class="even">
-                    <td>Project Name</td>
-                    <td>Builder Name</td>
-                    <td>Cost</td>
-                    <td><button type="submit" class="btn btn-primary">Approved</button><button type="submit" class="btn btn-primary">Cancel</button></td>
+                    <td width="10%"><img src="images/bank-logo.png" alt="" /></td>
+                    <td width="20%">Rs. 11236</td>
+                    <td width="15%" >10.10%</td>
+                    <td width="15%">Floating</td>
+                    <td width="15%">Rs. 3900</td>
+                    <td width="10%"><button type="submit" class="btn btn-primary">Apply</button></td>
                   </tr>
-                  <tr class="odd" >
-                    <td>Project Name</td>
-                    <td>Builder Name</td>
-                    <td>Cost</td>
-                    <td><button type="submit" class="btn btn-primary">Approved</button><button type="submit" class="btn btn-primary">Cancel</button></td>
+                  <tr class="bottom-row" >
+                    <td colspan="4">Fixed for 3 years. The Rate of Interest might vary between 10.5% and 11.25%</td>
+                    <td colspan="2">Customer Reviews:  <img src="images/rating-img.png" alt="" /></td>
+                  </tr>                  
+                </tbody>              
+              </table>
+              <table class="loan-detail-table mar-top-10">
+                <tbody>
+                  <tr class="even">
+                    <td width="10%"><img src="images/bank-logo.png" alt="" /></td>
+                    <td width="20%" >Rs. 11236</td>
+                    <td width="15%">10.10%</td>
+                    <td width="15%">Floating</td>
+                    <td width="15%">Rs. 3900</td>
+                    <td width="10%"><button type="submit" class="btn btn-primary">Apply</button></td>
+                  </tr>
+                  <tr class="bottom-row" >
+                    <td colspan="4">Fixed for 3 years. The Rate of Interest might vary between 10.5% and 11.25%</td>
+                    <td colspan="2">Customer Reviews:  <img src="images/rating-img.png" alt="" /></td>
                   </tr>                  
                 </tbody>              
               </table>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 mar-top-10">
                 <div class="form-actions">
                    <button type="submit" class="btn btn-default">Proceed</button>
                  </div> 
@@ -142,5 +170,10 @@
 
       </footer>
     <!-- footer end -->
+    <script src="js/classie.js"></script>
+    <script src="js/uisearch.js"></script>
+    <script>
+      new UISearch( document.getElementById( 'sb-search' ) );
+    </script>
   </body>
 </html>

@@ -10,6 +10,8 @@
     <link href="css/normalize.css" rel="stylesheet">
     <!-- Custom styles -->
     <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -40,6 +42,13 @@
     <header>
       <div class="wrapper">
         <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+        <div class="sb-search" id="sb-search">
+            <form>
+              <input type="search" id="search" name="search" placeholder="Search" class="sb-search-input">
+              <input type="submit" value="" class="sb-search-submit">
+              <span class="sb-icon-search"><img src="images/search-icon.png" alt="" /></span>
+            </form>
+          </div>        
         <nav>
           <ul>
             <li><a class="active" href="loan-introduction.html">Loans</a></li>
@@ -49,7 +58,6 @@
             <li><a href="#">Partners</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Careers</a></li>
-            <li class="searchSec"><button><img src="images/search-icon.png" alt="" /></button></li>
           </ul>
         </nav>
       </div>
@@ -161,5 +169,10 @@
 
       </footer>
     <!-- footer end -->
+    <script src="js/classie.js"></script>
+    <script src="js/uisearch.js"></script>
+    <script>
+      new UISearch( document.getElementById( 'sb-search' ) );
+    </script>
   </body>
 </html>
