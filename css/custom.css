@@ -481,10 +481,10 @@ nav li a:hover, nav li a.active{
   background: #faac1b;
   color: #fff;
   border:none;
-  padding: 15px;
+  padding: 5px 15px;
   width: 135px;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
 }
 .btn-primary{
   background: #000000;
@@ -495,6 +495,7 @@ nav li a:hover, nav li a.active{
   font-size: 14px;
   float: left;
   margin-right: 5px;
+  text-decoration:none;
 }
 
 /** 
@@ -529,6 +530,58 @@ footer ul li{
 footer ul li a{
   color: #fff;
   text-decoration: none;
+}
+/**
+* popup styles
+*/
+.popup-sec ul{
+   padding:0px;
+   margin:0px;
+}
+.popup-sec ul li{
+   padding:0px;
+   margin:0px;
+   list-style-type:none;
+}
+.popup-sec ul li{
+	display:inline-block;
+	width:100%;
+	margin-bottom:12px;
+}
+.popup-sec ul li label{
+	font-size:16px;
+	float:left;
+	width:185px;
+	margin-right:10px;
+}
+.popup-sec ul li .price-sec{
+	background:#b1e2df;
+	width:125px;
+	border:1px solid #9ed1ce;
+	float:left;
+	padding:0px 5px 0px 0px;
+	font-size:16px;
+	color:#000;
+}
+.popup-sec ul li .price-sec span{
+	border-left:3px solid #ffb907;
+	padding:2px 5px;
+}
+.popup-sec .right-sec{
+	padding-left:0px;
+}
+.popup-sec .right-sec p{
+    background: url("../images/chat-graphic.png") no-repeat scroll left 20px rgba(0, 0, 0, 0);
+    color: #fff;
+    font-size: 12px;
+    min-height: 155px;
+    padding: 58px 30px 0 28px;
+    text-align: center;
+    width: 230px;
+}
+.popup-sec .right-sec .form-actions{
+	clear:both;
+	margin-top:35px;
 }
 /** 
   * responsive styles 
