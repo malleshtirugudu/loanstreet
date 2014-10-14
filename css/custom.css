@@ -18,7 +18,7 @@ header{
 	color: #fff;
 	display: inline-block;
 	width: 100%;
-	padding: 25px 0px;
+	padding: 25px 0px 0px 0px;
 }
 .logo{
 	float: left;
@@ -470,9 +470,12 @@ nav li a:hover, nav li a.active{
 .form-actions{
   font-size: 13px;
   color: #000;
+  display: inline-block;
+  width: 100%;
 }
 .form-actions .btn-default{
   float: right;
+  margin-top: 10px;
 }
 /** 
 * button styles
@@ -733,8 +736,101 @@ header, footer, .social-links, .steps-head, .loan-steps-box .row .col-md-12, .lo
 }
 .body-bg{ background: none;}
 **/
-@media (max-width: 1090px){
+@media (max-width: 850px){
   .wrapper{
     margin: 0px 15px;
+  }
+}
+@media (max-width:480px){
+  .sb-search.sb-search-open, .no-js .sb-search{
+    width: 100%;
+  }
+  .form-actions .btn-default{
+    margin-top: 20px;
+  }
+}
+@media (max-width:840px){
+  .sb-search{
+    margin-right: 0px;
+  }
+  .rmm{
+    padding:10px 0px;
+  }
+  .dashboardSec{
+    margin-top: 30px;
+  }
+  .wishingSec h1{
+    width: 100%;
+    margin-top: 0px;
+  }
+  .wish-rightSec{
+    width: 50%;
+  }
+}
+@media (max-width:600px){
+  .steps-tabs li{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+  }
+  .loan-steps-box{
+    padding: 15px;
+  }
+  .wish-rightSec{
+    width: 100%;
+    background: none;
+    float: none;
+  }
+  .wishingSec input{
+    width: 100%;
+    float: none;
+  }
+  .steps-head .head-img{
+    padding: 10px;
+  }
+  .page-title{
+    margin-top:15px;
+  }
+  .recommened-loan select{
+    margin-left: 0px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .table-responsive {
+      margin-bottom: 15px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      width: 100%;
+  }
+}
+@media (max-width:700px){
+  .steps-tabs li.last{
+    display: none;
+  }
+}
+
+@media (min-width:481px) and (max-width:840px){
+  .sb-search{
+    margin-top: 5px;
+  }
+  .sb-search.sb-search-open, .no-js .sb-search{
+    width: 50%;
+  }  
+}
+@media (max-width:1023px){
+  .social-links{
+    position: static;
+    background-color: rgba(0,0,0,0.5);
+    display: table;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .left-links ul li{
+    margin-bottom: 0px;
+  }
+  .social-links li{
+    display: inline-block;
+    margin: 0px 5px;
   }
 }
