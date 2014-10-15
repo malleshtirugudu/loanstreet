@@ -409,7 +409,9 @@ nav li a:hover, nav li a.active{
 **/
 .table{
   width: 100%;
-  margin-bottom: 20px;
+}
+.table-responsive{
+ margin-bottom: 20px;  
 }
 .table tr td{ padding: 10px;}
 .table thead{
@@ -496,7 +498,6 @@ nav li a:hover, nav li a.active{
   padding: 10px 15px;
   text-align: center;
   font-size: 14px;
-  float: left;
   margin-right: 5px;
   text-decoration:none;
 }
@@ -833,4 +834,26 @@ header, footer, .social-links, .steps-head, .loan-steps-box .row .col-md-12, .lo
     display: inline-block;
     margin: 0px 5px;
   }
+}
+@media screen and (max-width: 767px) {
+  /* line 171, ../sass/bootstrap/_tables.scss */
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #dddddd;
+    -webkit-overflow-scrolling: touch;
+  }
+  /* line 190, ../sass/bootstrap/_tables.scss */
+  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > thead > tr > td,
+  .table-responsive > .table > tbody > tr > th,
+  .table-responsive > .table > tbody > tr > td,
+  .table-responsive > .table > tfoot > tr > th,
+  .table-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+
 }
