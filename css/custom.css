@@ -39,7 +39,7 @@ nav li{
 nav li a{
     font-size: 14px;
   	text-decoration: none;
-  	padding: 15px 8px;
+  	padding: 15px 10px 15px 10px;
   	float: left;
   	color: rgb( 255, 255, 255 );
 }
@@ -108,14 +108,15 @@ nav li a:hover, nav li a.active{
 .last-col h2{
   margin-top:0px;
   font-family: 'proxima_nova_rgbold';
-  font-size: 18px;
+  font-size: 19px;
   font-weight: normal;
+  margin-bottom:5px;
 }
 .last-col h4{
   margin-top: 0px;
 }
 .last-col p{
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'proxima_novalight';
 }
 .last-col a{
@@ -135,8 +136,10 @@ nav li a:hover, nav li a.active{
   font-weight: normal;
   width:20%;
   line-height: 30px;
+  font-family: 'proxima_nova_rgbold';
 }
 .wishingSec input{
+  font-family: 'proxima_nova_rgregular';
   background-color: #bedfe0;
   border:none;
   font-size: 21px;
@@ -145,12 +148,13 @@ nav li a:hover, nav li a.active{
   color: #000000;
 }
 .wish-rightSec{
+  font-family: 'proxima_nova_rgbold';
   background-color: #bedfe0; 
   color: #000000;
   padding: 18px;
   width: 30%;
   float: right;
-  font-size: 22px;
+  font-size: 21px;
 }
 .readmore{
   text-align: right;
@@ -182,8 +186,8 @@ nav li a:hover, nav li a.active{
   background-size: cover;
 }
 .page-title{
+  font-family: 'proxima_nova_rgbold';
   font-size: 36px;
-  font-weight: bold;
   color: #fff;
   float: left;
 }
@@ -212,13 +216,14 @@ nav li a:hover, nav li a.active{
   width: 100%;
 }
 .loan-steps-box h3{
+  font-family: 'proxima_nova_condensedSBd';
   font-size: 24px;
   font-weight: normal;
   margin-top: 0px;
 }
 .loan-steps-box h3 span{
   font-size: 30px;
-  font-weight: bold;
+  font-family: 'proxima_novaextrabold';
 }
 .orange-color{
   color: #f4b821;
@@ -245,6 +250,7 @@ nav li a:hover, nav li a.active{
 }
 .steps-tabs li a{
   color: #fff;
+  font-family: 'proxima_nova_rgbold';
   text-decoration: none;
 }
 .steps-tabs li.active{
@@ -267,7 +273,8 @@ nav li a:hover, nav li a.active{
   margin-bottom: 10px;
 }
 .form-control{
-  font-size: 16px;
+  font-family: 'proxima_novalight';
+  font-size: 14px;
   background: #fff;
   border:1px solid #fab913;
   height: 35px;
@@ -332,6 +339,7 @@ nav li a:hover, nav li a.active{
   max-width: 30px;
 }
 .recommened-loan{
+  font-family: 'proxima_nova_condensedSBd';
   background: #2cb7bc;
   border-left:7px solid #ffb907;
   font-size: 22px;
@@ -342,6 +350,7 @@ nav li a:hover, nav li a.active{
 }
 .black-color{
   color: #000;
+  font-family: 'proxima_nova_rgbold';
 }
 .recommened-loan select{
   font-size: 14px;
@@ -430,6 +439,7 @@ nav li a:hover, nav li a.active{
   background: #fcf8e3;
 }
 .table thead tr td{
+  font-family: 'proxima_nova_condensedSBd';
   font-size: 16px;
   font-weight: bold;  
 }
@@ -767,6 +777,9 @@ header, footer, .social-links, .steps-head, .loan-steps-box .row .col-md-12, .lo
   .wish-rightSec{
     width: 50%;
   }
+  .rmm{
+	max-width:80%!important;
+  } 
 }
 @media (max-width:600px){
   .steps-tabs li{
@@ -808,6 +821,9 @@ header, footer, .social-links, .steps-head, .loan-steps-box .row .col-md-12, .lo
   .steps-tabs li.last{
     display: none;
   }
+  .rmm{
+	max-width:100%!important;
+  }   
 }
 
 @media (min-width:481px) and (max-width:840px){
@@ -816,7 +832,7 @@ header, footer, .social-links, .steps-head, .loan-steps-box .row .col-md-12, .lo
   }
   .sb-search.sb-search-open, .no-js .sb-search{
     width: 50%;
-  }  
+  } 
 }
 @media (max-width:1023px){
   .social-links{
